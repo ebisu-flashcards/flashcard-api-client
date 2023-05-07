@@ -1,4 +1,4 @@
-# flashcards-api-client.model.body_verify_request_token_request_verify_token_post.BodyVerifyRequestTokenRequestVerifyTokenPost
+# flashcards_api_client.model.body_verify_request_token_request_verify_token_post.BodyVerifyRequestTokenRequestVerifyTokenPost
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

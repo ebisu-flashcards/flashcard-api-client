@@ -1,4 +1,4 @@
-# flashcards-api-client.model.card_create.CardCreate
+# flashcards_api_client.model.card_create.CardCreate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

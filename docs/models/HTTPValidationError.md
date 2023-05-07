@@ -1,4 +1,4 @@
-# flashcards-api-client.model.http_validation_error.HTTPValidationError
+# flashcards_api_client.model.http_validation_error.HTTPValidationError
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

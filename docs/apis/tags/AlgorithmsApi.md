@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.algorithms_api.AlgorithmsApi
+# flashcards_api_client.apis.tags.algorithms_api.AlgorithmsApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,13 +17,13 @@ Get Algorithms
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import algorithms_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import algorithms_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -33,12 +33,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = algorithms_api.AlgorithmsApi(api_client)
 
@@ -53,7 +53,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AlgorithmsApi->get_algorithms: %s\n" % e)
 ```
 ### Parameters

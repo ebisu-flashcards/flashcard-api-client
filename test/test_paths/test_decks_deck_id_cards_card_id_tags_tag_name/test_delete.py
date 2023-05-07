@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import flashcards-api-client
-from flashcards-api-client.paths.decks_deck_id_cards_card_id_tags_tag_name import delete  # noqa: E501
-from flashcards-api-client import configuration, schemas, api_client
+import flashcards_api_client
+from flashcards_api_client.paths.decks_deck_id_cards_card_id_tags_tag_name import delete  # noqa: E501
+from flashcards_api_client import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

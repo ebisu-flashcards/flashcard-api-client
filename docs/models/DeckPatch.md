@@ -1,4 +1,4 @@
-# flashcards-api-client.model.deck_patch.DeckPatch
+# flashcards_api_client.model.deck_patch.DeckPatch
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

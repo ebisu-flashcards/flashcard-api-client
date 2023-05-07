@@ -1,4 +1,4 @@
-# flashcards-api-client.model.review.Review
+# flashcards_api_client.model.review.Review
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

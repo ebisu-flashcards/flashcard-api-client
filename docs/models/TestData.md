@@ -1,4 +1,4 @@
-# flashcards-api-client.model.test_data.TestData
+# flashcards_api_client.model.test_data.TestData
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

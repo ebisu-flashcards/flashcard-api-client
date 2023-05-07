@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.default_api.DefaultApi
+# flashcards_api_client.apis.tags.default_api.DefaultApi
 
 All URIs are relative to *http://localhost*
 
@@ -16,17 +16,17 @@ Root
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import default_api
+import flashcards_api_client
+from flashcards_api_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -35,7 +35,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
         # Root
         api_response = api_instance.root()
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DefaultApi->root: %s\n" % e)
 ```
 ### Parameters

@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.facts_api.FactsApi
+# flashcards_api_client.apis.tags.facts_api.FactsApi
 
 All URIs are relative to *http://localhost*
 
@@ -28,14 +28,14 @@ Assign a related fact to the fact.  :param fact_id: the id of the fact to edit :
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -45,12 +45,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -69,7 +69,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->assign_related_fact: %s\n" % e)
 ```
 ### Parameters
@@ -180,14 +180,14 @@ Assign this tag to the fact.  :param fact_id: the id of the fact to edit :param 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -197,12 +197,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -217,7 +217,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->assign_tag_to_fact: %s\n" % e)
 ```
 ### Parameters
@@ -312,15 +312,15 @@ Creates a new fact with the given data.  :param fact: the details of the new fac
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.fact_create import FactCreate
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.fact_create import FactCreate
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -330,12 +330,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -361,7 +361,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->create_fact: %s\n" % e)
 ```
 ### Parameters
@@ -441,13 +441,13 @@ Delete Fact
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -457,12 +457,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -476,7 +476,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->delete_fact: %s\n" % e)
 ```
 ### Parameters
@@ -564,15 +564,15 @@ Edits the details of the given fact  :param fact_id: the id of the fact to edit 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_patch import FactPatch
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.fact_patch import FactPatch
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -582,12 +582,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -606,7 +606,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->edit_fact: %s\n" % e)
 ```
 ### Parameters
@@ -703,14 +703,14 @@ Get all the details of one fact.  :param fact_id: the id of the fact to get :ret
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -720,12 +720,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -739,7 +739,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->get_fact: %s\n" % e)
 ```
 ### Parameters
@@ -826,14 +826,14 @@ Get all facts.  :returns: All the facts, paginated.
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -843,12 +843,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -863,7 +863,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->get_facts: %s\n" % e)
 ```
 ### Parameters
@@ -965,14 +965,14 @@ Get all the details of the facts which have this tag assigned.  :param tag_name:
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -982,12 +982,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -1004,7 +1004,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->get_facts_by_tag: %s\n" % e)
 
     # example passing only optional values
@@ -1022,7 +1022,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->get_facts_by_tag: %s\n" % e)
 ```
 ### Parameters
@@ -1139,14 +1139,14 @@ Remove the relationship between these two facts.  :param fact_id: the id of the 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1156,12 +1156,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -1180,7 +1180,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->remove_related_fact: %s\n" % e)
 ```
 ### Parameters
@@ -1291,14 +1291,14 @@ Remove this tag from the fact.  :param fact_id: the id of the fact to edit :para
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import facts_api
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import facts_api
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1308,12 +1308,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = facts_api.FactsApi(api_client)
 
@@ -1328,7 +1328,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling FactsApi->remove_tag_from_fact: %s\n" % e)
 ```
 ### Parameters

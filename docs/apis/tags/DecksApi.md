@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.decks_api.DecksApi
+# flashcards_api_client.apis.tags.decks_api.DecksApi
 
 All URIs are relative to *http://localhost*
 
@@ -37,14 +37,14 @@ Create a relationship between these two cards.  :param deck_id: the id of the de
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -54,12 +54,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -79,7 +79,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->add_related_card_to_card: %s\n" % e)
 ```
 ### Parameters
@@ -198,14 +198,14 @@ Assign this fact as a context for the answer of the card.  :param deck_id: the i
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -215,12 +215,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -236,7 +236,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->assign_answer_context_to_card: %s\n" % e)
 ```
 ### Parameters
@@ -339,14 +339,14 @@ Assign this fact as a context for the question of the card.  :param deck_id: the
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -356,12 +356,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -377,7 +377,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->assign_question_context_to_card: %s\n" % e)
 ```
 ### Parameters
@@ -480,14 +480,14 @@ Assign this tag to the card.  :param deck_id: the id of the deck this card belon
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -497,12 +497,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -518,7 +518,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->assign_tag_to_card: %s\n" % e)
 ```
 ### Parameters
@@ -621,15 +621,15 @@ Creates a new card with the given data.  :param deck_id: the id of the deck this
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_create import CardCreate
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_create import CardCreate
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -639,12 +639,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -674,7 +674,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->create_card: %s\n" % e)
 ```
 ### Parameters
@@ -771,15 +771,15 @@ Creates a new deck with the given data.  :param deck: the details of the new dec
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.deck_create import DeckCreate
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.deck_read import DeckRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.deck_create import DeckCreate
+from flashcards_api_client.model.deck_read import DeckRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -789,12 +789,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -816,7 +816,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->create_deck: %s\n" % e)
 ```
 ### Parameters
@@ -898,13 +898,13 @@ Removes the given card from this deck  :param deck_id: the id of the deck to rem
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -914,12 +914,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -934,7 +934,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->delete_card: %s\n" % e)
 ```
 ### Parameters
@@ -1030,13 +1030,13 @@ Removes the given deck  :param deck_id: the id of the deck to remove :returns: N
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1046,12 +1046,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1065,7 +1065,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->delete_deck: %s\n" % e)
 ```
 ### Parameters
@@ -1153,15 +1153,15 @@ Edits the details of the given card  :param deck_id: the id of the deck this car
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_patch import CardPatch
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
+from flashcards_api_client.model.card_patch import CardPatch
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1171,12 +1171,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1196,7 +1196,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->edit_card: %s\n" % e)
 ```
 ### Parameters
@@ -1301,15 +1301,15 @@ Edits the details of the given deck  :param deck_id: the id of the deck to be mo
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.deck_patch import DeckPatch
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.deck_read import DeckRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.deck_patch import DeckPatch
+from flashcards_api_client.model.deck_read import DeckRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1319,12 +1319,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1351,7 +1351,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->edit_deck: %s\n" % e)
 ```
 ### Parameters
@@ -1448,14 +1448,14 @@ Get all the details of one card.  :param deck_id: the id of the deck this card b
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1465,12 +1465,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1485,7 +1485,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_card: %s\n" % e)
 ```
 ### Parameters
@@ -1580,14 +1580,14 @@ Get all the cards for a deck (paginated, if needed).  :param deck_id: the id of 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1597,12 +1597,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1619,7 +1619,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_cards: %s\n" % e)
 
     # example passing only optional values
@@ -1637,7 +1637,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_cards: %s\n" % e)
 ```
 ### Parameters
@@ -1754,14 +1754,14 @@ Get all the details of a deck.  :param deck_id: the id of the deck to get :retur
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.deck_read import DeckRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.deck_read import DeckRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1771,12 +1771,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1790,7 +1790,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_deck: %s\n" % e)
 ```
 ### Parameters
@@ -1875,13 +1875,13 @@ Get My Decks
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.deck_read import DeckRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.deck_read import DeckRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1891,12 +1891,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -1905,7 +1905,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
         # Get My Decks
         api_response = api_instance.get_my_decks()
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_my_decks: %s\n" % e)
 ```
 ### Parameters
@@ -1963,14 +1963,14 @@ Get all the reviews done on this card.  :param deck_id: the id of the deck this 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.review import Review
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.review import Review
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -1980,12 +1980,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -2000,7 +2000,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->get_reviews: %s\n" % e)
 ```
 ### Parameters
@@ -2101,14 +2101,14 @@ Remove this fact from the answer context of the card.  :param deck_id: the id of
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -2118,12 +2118,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -2139,7 +2139,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->remove_answer_context_from_card: %s\n" % e)
 ```
 ### Parameters
@@ -2242,14 +2242,14 @@ Remove this fact from the question context of the card.  :param deck_id: the id 
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -2259,12 +2259,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -2280,7 +2280,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->remove_question_context_from_card: %s\n" % e)
 ```
 ### Parameters
@@ -2383,14 +2383,14 @@ Remove a relationship between these two cards.  :param deck_id: the id of the de
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -2400,12 +2400,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -2425,7 +2425,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->remove_related_card: %s\n" % e)
 ```
 ### Parameters
@@ -2544,14 +2544,14 @@ Remove this tag from the card.  :param deck_id: the id of the deck this card bel
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import decks_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import decks_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -2561,12 +2561,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = decks_api.DecksApi(api_client)
 
@@ -2582,7 +2582,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling DecksApi->remove_tag_from_card: %s\n" % e)
 ```
 ### Parameters

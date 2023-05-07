@@ -1,4 +1,4 @@
-# flashcards-api-client.model.tag_create.TagCreate
+# flashcards_api_client.model.tag_create.TagCreate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

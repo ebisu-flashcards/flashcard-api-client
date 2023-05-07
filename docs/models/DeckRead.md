@@ -1,4 +1,4 @@
-# flashcards-api-client.model.deck_read.DeckRead
+# flashcards_api_client.model.deck_read.DeckRead
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

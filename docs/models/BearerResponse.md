@@ -1,4 +1,4 @@
-# flashcards-api-client.model.bearer_response.BearerResponse
+# flashcards_api_client.model.bearer_response.BearerResponse
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

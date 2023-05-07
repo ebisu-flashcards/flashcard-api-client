@@ -1,4 +1,4 @@
-# flashcards-api-client.model.user_update.UserUpdate
+# flashcards_api_client.model.user_update.UserUpdate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

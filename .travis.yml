@@ -10,4 +10,4 @@ install:
   - "pip install -r requirements.txt"
   - "pip install -r test-requirements.txt"
 # command to run tests
-script: pytest --cov=flashcards-api-client
+script: pytest --cov=flashcards_api_client

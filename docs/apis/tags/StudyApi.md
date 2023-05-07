@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.study_api.StudyApi
+# flashcards_api_client.apis.tags.study_api.StudyApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,14 +20,14 @@ Get the first card to study.  :param deck_id: the deck being studied :returns: t
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import study_api
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import study_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -37,12 +37,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = study_api.StudyApi(api_client)
 
@@ -56,7 +56,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling StudyApi->first_card: %s\n" % e)
 ```
 ### Parameters
@@ -143,15 +143,15 @@ Processes the result of the previous test and returns the next card to study.  :
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import study_api
-from flashcards-api-client.model.test_data import TestData
-from flashcards-api-client.model.card_read import CardRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import study_api
+from flashcards_api_client.model.test_data import TestData
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.card_read import CardRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -161,12 +161,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = study_api.StudyApi(api_client)
 
@@ -185,7 +185,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling StudyApi->next_card: %s\n" % e)
 ```
 ### Parameters

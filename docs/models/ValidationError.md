@@ -1,4 +1,4 @@
-# flashcards-api-client.model.validation_error.ValidationError
+# flashcards_api_client.model.validation_error.ValidationError
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

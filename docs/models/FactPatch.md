@@ -1,4 +1,4 @@
-# flashcards-api-client.model.fact_patch.FactPatch
+# flashcards_api_client.model.fact_patch.FactPatch
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

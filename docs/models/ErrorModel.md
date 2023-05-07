@@ -1,4 +1,4 @@
-# flashcards-api-client.model.error_model.ErrorModel
+# flashcards_api_client.model.error_model.ErrorModel
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

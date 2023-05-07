@@ -114,7 +114,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import flashcards-api-client
+import flashcards_api_client
 ```
 
 ### Setuptools
@@ -128,7 +128,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import flashcards-api-client
+import flashcards_api_client
 ```
 
 ## Getting Started
@@ -138,13 +138,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import flashcards-api-client
+import flashcards_api_client
 from pprint import pprint
-from flashcards-api-client.apis.tags import algorithms_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.apis.tags import algorithms_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -154,13 +154,13 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = algorithms_api.AlgorithmsApi(api_client)
     offset = 0 # int |  (optional) (default to CodegenParameter{isFormParam=false, isQueryParam=true, isPathParam=false, isHeaderParam=false, isCookieParam=false, isBodyParam=false, isContainer=false, isCollectionFormatMulti=false, isPrimitiveType=true, isModel=false, isExplode=true, baseName='offset', paramName='offset', dataType='int', datatypeWithEnum='null', dataFormat='null', collectionFormat='null', description='null', unescapedDescription='null', baseType='null', defaultValue='0', enumDefaultValue='null', enumName='null', style='FORM', deepObject='false', allowEmptyValue='false', example='0', jsonSchema='{
@@ -200,7 +200,7 @@ limit = 100 # int |  (optional) (default to CodegenParameter{isFormParam=false, 
         # Get Algorithms
         api_response = api_instance.get_algorithms(offset=offsetlimit=limit)
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AlgorithmsApi->get_algorithms: %s\n" % e)
 ```
 
@@ -314,20 +314,20 @@ Class | Method | HTTP request | Description
 
 
 ## Notes for Large OpenAPI documents
-If the OpenAPI document is large, imports in flashcards-api-client.apis and flashcards-api-client.models may fail with a
+If the OpenAPI document is large, imports in flashcards_api_client.apis and flashcards_api_client.models may fail with a
 RecursionError indicating the maximum recursion limit has been exceeded. In that case, there are a couple of solutions:
 
 Solution 1:
 Use specific imports for apis and models like:
-- `from flashcards-api-client.apis.default_api import DefaultApi`
-- `from flashcards-api-client.model.pet import Pet`
+- `from flashcards_api_client.apis.default_api import DefaultApi`
+- `from flashcards_api_client.model.pet import Pet`
 
 Solution 1:
 Before importing the package, adjust the maximum recursion limit as shown below:
 ```
 import sys
 sys.setrecursionlimit(1500)
-import flashcards-api-client
-from flashcards-api-client.apis import *
-from flashcards-api-client.models import *
+import flashcards_api_client
+from flashcards_api_client.apis import *
+from flashcards_api_client.models import *
 ```

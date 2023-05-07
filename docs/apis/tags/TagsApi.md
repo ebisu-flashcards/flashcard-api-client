@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.tags_api.TagsApi
+# flashcards_api_client.apis.tags.tags_api.TagsApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,15 +21,15 @@ Create Tag
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import tags_api
-from flashcards-api-client.model.tag_read import TagRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.tag_create import TagCreate
+import flashcards_api_client
+from flashcards_api_client.apis.tags import tags_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.tag_read import TagRead
+from flashcards_api_client.model.tag_create import TagCreate
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -39,12 +39,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tags_api.TagsApi(api_client)
 
@@ -58,7 +58,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling TagsApi->create_tag: %s\n" % e)
 ```
 ### Parameters
@@ -138,13 +138,13 @@ Delete Tag
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import tags_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import tags_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -154,12 +154,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tags_api.TagsApi(api_client)
 
@@ -173,7 +173,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling TagsApi->delete_tag: %s\n" % e)
 ```
 ### Parameters
@@ -259,15 +259,15 @@ Edit Tag
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import tags_api
-from flashcards-api-client.model.tag_read import TagRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.tag_create import TagCreate
+import flashcards_api_client
+from flashcards_api_client.apis.tags import tags_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.tag_read import TagRead
+from flashcards_api_client.model.tag_create import TagCreate
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -277,12 +277,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tags_api.TagsApi(api_client)
 
@@ -300,7 +300,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling TagsApi->edit_tag: %s\n" % e)
 ```
 ### Parameters
@@ -395,14 +395,14 @@ Get Tag
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import tags_api
-from flashcards-api-client.model.tag_read import TagRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import tags_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.tag_read import TagRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -412,12 +412,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tags_api.TagsApi(api_client)
 
@@ -431,7 +431,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling TagsApi->get_tag: %s\n" % e)
 ```
 ### Parameters
@@ -516,14 +516,14 @@ Get Tags
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import tags_api
-from flashcards-api-client.model.tag_read import TagRead
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import tags_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.tag_read import TagRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -533,12 +533,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tags_api.TagsApi(api_client)
 
@@ -553,7 +553,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling TagsApi->get_tags: %s\n" % e)
 ```
 ### Parameters

@@ -1,4 +1,4 @@
-# flashcards-api-client.model.deck_create.DeckCreate
+# flashcards_api_client.model.deck_create.DeckCreate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

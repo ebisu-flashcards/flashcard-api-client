@@ -1,4 +1,4 @@
-# flashcards-api-client.model.related_card.RelatedCard
+# flashcards_api_client.model.related_card.RelatedCard
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

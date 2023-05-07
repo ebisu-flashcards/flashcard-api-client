@@ -1,4 +1,4 @@
-# flashcards-api-client.model.fact_create.FactCreate
+# flashcards_api_client.model.fact_create.FactCreate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

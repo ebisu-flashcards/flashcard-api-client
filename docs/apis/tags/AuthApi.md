@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.auth_api.AuthApi
+# flashcards_api_client.apis.tags.auth_api.AuthApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,21 +22,21 @@ Auth:Jwt.Login
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.bearer_response import BearerResponse
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.body_auth_jwt_login_auth_jwt_login_post import BodyAuthJwtLoginAuthJwtLoginPost
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.bearer_response import BearerResponse
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.body_auth_jwt_login_auth_jwt_login_post import BodyAuthJwtLoginAuthJwtLoginPost
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -55,7 +55,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->auth_jwt_login: %s\n" % e)
 ```
 ### Parameters
@@ -141,12 +141,12 @@ Auth:Jwt.Logout
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -156,12 +156,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -170,7 +170,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
         # Auth:Jwt.Logout
         api_response = api_instance.auth_jwt_logout()
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->auth_jwt_logout: %s\n" % e)
 ```
 ### Parameters
@@ -220,21 +220,21 @@ Register:Register
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.user_read import UserRead
-from flashcards-api-client.model.user_create import UserCreate
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.user_create import UserCreate
+from flashcards_api_client.model.user_read import UserRead
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -252,7 +252,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->register_register: %s\n" % e)
 ```
 ### Parameters
@@ -337,19 +337,19 @@ Reset:Forgot Password
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.body_reset_forgot_password_forgot_password_post import BodyResetForgotPasswordForgotPasswordPost
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.body_reset_forgot_password_forgot_password_post import BodyResetForgotPasswordForgotPasswordPost
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -363,7 +363,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->reset_forgot_password: %s\n" % e)
 ```
 ### Parameters
@@ -435,20 +435,20 @@ Reset:Reset Password
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.body_reset_reset_password_reset_password_post import BodyResetResetPasswordResetPasswordPost
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.body_reset_reset_password_reset_password_post import BodyResetResetPasswordResetPasswordPost
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -463,7 +463,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->reset_reset_password: %s\n" % e)
 ```
 ### Parameters
@@ -549,19 +549,19 @@ Verify:Request-Token
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.body_verify_request_token_request_verify_token_post import BodyVerifyRequestTokenRequestVerifyTokenPost
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.body_verify_request_token_request_verify_token_post import BodyVerifyRequestTokenRequestVerifyTokenPost
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -575,7 +575,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->verify_request_token: %s\n" % e)
 ```
 ### Parameters
@@ -647,21 +647,21 @@ Verify:Verify
 ### Example
 
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import auth_api
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.user_read import UserRead
-from flashcards-api-client.model.body_verify_verify_verify_post import BodyVerifyVerifyVerifyPost
+import flashcards_api_client
+from flashcards_api_client.apis.tags import auth_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.body_verify_verify_verify_post import BodyVerifyVerifyVerifyPost
+from flashcards_api_client.model.user_read import UserRead
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
@@ -675,7 +675,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling AuthApi->verify_verify: %s\n" % e)
 ```
 ### Parameters

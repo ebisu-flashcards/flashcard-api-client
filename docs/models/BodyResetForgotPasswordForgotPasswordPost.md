@@ -1,4 +1,4 @@
-# flashcards-api-client.model.body_reset_forgot_password_forgot_password_post.BodyResetForgotPasswordForgotPasswordPost
+# flashcards_api_client.model.body_reset_forgot_password_forgot_password_post.BodyResetForgotPasswordForgotPasswordPost
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

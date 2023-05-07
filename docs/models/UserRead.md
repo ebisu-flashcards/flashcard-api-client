@@ -1,4 +1,4 @@
-# flashcards-api-client.model.user_read.UserRead
+# flashcards_api_client.model.user_read.UserRead
 
 Base User model.
 

@@ -1,4 +1,4 @@
-# flashcards-api-client.model.card_read.CardRead
+# flashcards_api_client.model.card_read.CardRead
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# flashcards-api-client.model.tag_read.TagRead
+# flashcards_api_client.model.tag_read.TagRead
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

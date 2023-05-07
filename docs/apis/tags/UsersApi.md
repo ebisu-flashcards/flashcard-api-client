@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# flashcards-api-client.apis.tags.users_api.UsersApi
+# flashcards_api_client.apis.tags.users_api.UsersApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,13 +21,13 @@ Users:Current User
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import users_api
-from flashcards-api-client.model.user_read import UserRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import users_api
+from flashcards_api_client.model.user_read import UserRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -37,12 +37,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -51,7 +51,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
         # Users:Current User
         api_response = api_instance.users_current_user()
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling UsersApi->users_current_user: %s\n" % e)
 ```
 ### Parameters
@@ -101,13 +101,13 @@ Users:Delete User
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import users_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
+import flashcards_api_client
+from flashcards_api_client.apis.tags import users_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -117,12 +117,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -135,7 +135,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
         api_response = api_instance.users_delete_user(
             path_params=path_params,
         )
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling UsersApi->users_delete_user: %s\n" % e)
 ```
 ### Parameters
@@ -230,16 +230,16 @@ Users:Patch Current User
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import users_api
-from flashcards-api-client.model.user_update import UserUpdate
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.user_read import UserRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import users_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.user_read import UserRead
+from flashcards_api_client.model.user_update import UserUpdate
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -249,12 +249,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -272,7 +272,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling UsersApi->users_patch_current_user: %s\n" % e)
 ```
 ### Parameters
@@ -366,16 +366,16 @@ Users:Patch User
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import users_api
-from flashcards-api-client.model.user_update import UserUpdate
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.user_read import UserRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import users_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.user_read import UserRead
+from flashcards_api_client.model.user_update import UserUpdate
+from flashcards_api_client.model.error_model import ErrorModel
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -385,12 +385,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -412,7 +412,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling UsersApi->users_patch_user: %s\n" % e)
 ```
 ### Parameters
@@ -537,14 +537,14 @@ Users:User
 
 * OAuth Authentication (OAuth2PasswordBearer):
 ```python
-import flashcards-api-client
-from flashcards-api-client.apis.tags import users_api
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client.model.user_read import UserRead
+import flashcards_api_client
+from flashcards_api_client.apis.tags import users_api
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client.model.user_read import UserRead
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost"
 )
 
@@ -554,12 +554,12 @@ configuration = flashcards-api-client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = flashcards-api-client.Configuration(
+configuration = flashcards_api_client.Configuration(
     host = "http://localhost",
     access_token = 'YOUR_ACCESS_TOKEN'
 )
 # Enter a context with an instance of the API client
-with flashcards-api-client.ApiClient(configuration) as api_client:
+with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -573,7 +573,7 @@ with flashcards-api-client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except flashcards-api-client.ApiException as e:
+    except flashcards_api_client.ApiException as e:
         print("Exception when calling UsersApi->users_user: %s\n" % e)
 ```
 ### Parameters
