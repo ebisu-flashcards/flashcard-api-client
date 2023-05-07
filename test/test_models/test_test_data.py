@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.test_data import TestData
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.test_data import TestData
+from flashcards_api_client import configuration
 
 
 class TestTestData(unittest.TestCase):

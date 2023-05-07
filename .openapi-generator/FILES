@@ -11,6 +11,7 @@ docs/apis/tags/StudyApi.md
 docs/apis/tags/TagsApi.md
 docs/apis/tags/UsersApi.md
 docs/models/BearerResponse.md
+docs/models/BodyAuthJwtLoginAuthJwtLoginPost.md
 docs/models/BodyResetForgotPasswordForgotPasswordPost.md
 docs/models/BodyResetResetPasswordResetPasswordPost.md
 docs/models/BodyVerifyRequestTokenRequestVerifyTokenPost.md
@@ -53,6 +54,8 @@ flashcards_api_client/exceptions.py
 flashcards_api_client/model/__init__.py
 flashcards_api_client/model/bearer_response.py
 flashcards_api_client/model/bearer_response.pyi
+flashcards_api_client/model/body_auth_jwt_login_auth_jwt_login_post.py
+flashcards_api_client/model/body_auth_jwt_login_auth_jwt_login_post.pyi
 flashcards_api_client/model/body_reset_forgot_password_forgot_password_post.py
 flashcards_api_client/model/body_reset_forgot_password_forgot_password_post.pyi
 flashcards_api_client/model/body_reset_reset_password_reset_password_post.py
@@ -115,4 +118,5 @@ setup.py
 test-requirements.txt
 test/__init__.py
 test/test_models/__init__.py
+test/test_models/test_body_auth_jwt_login_auth_jwt_login_post.py
 tox.ini

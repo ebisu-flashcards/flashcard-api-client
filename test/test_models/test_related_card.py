@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.related_card import RelatedCard
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.related_card import RelatedCard
+from flashcards_api_client import configuration
 
 
 class TestRelatedCard(unittest.TestCase):

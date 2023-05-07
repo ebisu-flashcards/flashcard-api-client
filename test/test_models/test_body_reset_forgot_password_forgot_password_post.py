@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.body_reset_forgot_password_forgot_password_post import BodyResetForgotPasswordForgotPasswordPost
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.body_reset_forgot_password_forgot_password_post import BodyResetForgotPasswordForgotPasswordPost
+from flashcards_api_client import configuration
 
 
 class TestBodyResetForgotPasswordForgotPasswordPost(unittest.TestCase):

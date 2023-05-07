@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.bearer_response import BearerResponse
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.bearer_response import BearerResponse
+from flashcards_api_client import configuration
 
 
 class TestBearerResponse(unittest.TestCase):

@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.card_create import CardCreate
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.card_create import CardCreate
+from flashcards_api_client import configuration
 
 
 class TestCardCreate(unittest.TestCase):

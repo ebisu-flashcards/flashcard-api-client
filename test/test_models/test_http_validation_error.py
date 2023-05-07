@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.http_validation_error import HTTPValidationError
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.http_validation_error import HTTPValidationError
+from flashcards_api_client import configuration
 
 
 class TestHTTPValidationError(unittest.TestCase):

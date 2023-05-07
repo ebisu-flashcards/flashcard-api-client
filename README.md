@@ -264,6 +264,7 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [BearerResponse](docs/models/BearerResponse.md)
+ - [BodyAuthJwtLoginAuthJwtLoginPost](docs/models/BodyAuthJwtLoginAuthJwtLoginPost.md)
  - [BodyResetForgotPasswordForgotPasswordPost](docs/models/BodyResetForgotPasswordForgotPasswordPost.md)
  - [BodyResetResetPasswordResetPasswordPost](docs/models/BodyResetResetPasswordResetPasswordPost.md)
  - [BodyVerifyRequestTokenRequestVerifyTokenPost](docs/models/BodyVerifyRequestTokenRequestVerifyTokenPost.md)

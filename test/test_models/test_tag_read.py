@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.tag_read import TagRead
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.tag_read import TagRead
+from flashcards_api_client import configuration
 
 
 class TestTagRead(unittest.TestCase):

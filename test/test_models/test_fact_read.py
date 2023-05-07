@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.fact_read import FactRead
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.fact_read import FactRead
+from flashcards_api_client import configuration
 
 
 class TestFactRead(unittest.TestCase):

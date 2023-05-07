@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.body_verify_request_token_request_verify_token_post import BodyVerifyRequestTokenRequestVerifyTokenPost
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.body_verify_request_token_request_verify_token_post import BodyVerifyRequestTokenRequestVerifyTokenPost
+from flashcards_api_client import configuration
 
 
 class TestBodyVerifyRequestTokenRequestVerifyTokenPost(unittest.TestCase):

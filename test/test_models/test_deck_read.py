@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.deck_read import DeckRead
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.deck_read import DeckRead
+from flashcards_api_client import configuration
 
 
 class TestDeckRead(unittest.TestCase):

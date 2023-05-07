@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.user_create import UserCreate
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.user_create import UserCreate
+from flashcards_api_client import configuration
 
 
 class TestUserCreate(unittest.TestCase):

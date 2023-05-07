@@ -12,12 +12,12 @@
 import unittest
 
 import flashcards_api_client
-from flashcards_api_client.model.card_read import CardRead
+from flashcards_api_client.model.body_auth_jwt_login_auth_jwt_login_post import BodyAuthJwtLoginAuthJwtLoginPost
 from flashcards_api_client import configuration
 
 
-class TestCardRead(unittest.TestCase):
-    """CardRead unit test stubs"""
+class TestBodyAuthJwtLoginAuthJwtLoginPost(unittest.TestCase):
+    """BodyAuthJwtLoginAuthJwtLoginPost unit test stubs"""
     _configuration = configuration.Configuration()
 
 

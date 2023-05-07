@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.error_model import ErrorModel
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.error_model import ErrorModel
+from flashcards_api_client import configuration
 
 
 class TestErrorModel(unittest.TestCase):

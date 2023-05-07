@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 # **auth_jwt_login**
 <a name="auth_jwt_login"></a>
-> BearerResponse auth_jwt_login()
+> BearerResponse auth_jwt_login(body_auth_jwt_login_auth_jwt_login_post)
 
 Auth:Jwt.Login
 
@@ -40,8 +40,8 @@ with flashcards_api_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = auth_api.AuthApi(api_client)
 
-    # example passing only optional values
-    body = dict(
+    # example passing only required values which don't have defaults set
+    body = BodyAuthJwtLoginAuthJwtLoginPost(
         grant_type="password",
         username="username_example",
         password="password_example",
@@ -62,8 +62,8 @@ with flashcards_api_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-body | typing.Union[SchemaForRequestBodyApplicationXWwwFormUrlencoded, Unset] | optional, default is unset |
-content_type | str | optional, default is 'application/x-www-form-urlencoded' | Selects the schema and serialization of the request body
+body | typing.Union[SchemaForRequestBodyApplicationJson] | required |
+content_type | str | optional, default is 'application/json' | Selects the schema and serialization of the request body
 accept_content_types | typing.Tuple[str] | default is ('application/json', ) | Tells the server the content type(s) that are accepted by the client
 stream | bool | default is False | if True then the response.content will be streamed and loaded from a file like object. When downloading a file, set this to True to force the code to deserialize the content to a FileSchema file
 timeout | typing.Optional[typing.Union[int, typing.Tuple]] | default is None | the timeout used by the rest client
@@ -71,7 +71,7 @@ skip_deserialization | bool | default is False | when True, headers and body wil
 
 ### body
 
-# SchemaForRequestBodyApplicationXWwwFormUrlencoded
+# SchemaForRequestBodyApplicationJson
 Type | Description  | Notes
 ------------- | ------------- | -------------
 [**BodyAuthJwtLoginAuthJwtLoginPost**](../../models/BodyAuthJwtLoginAuthJwtLoginPost.md) |  | 

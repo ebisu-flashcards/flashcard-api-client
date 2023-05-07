@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.body_verify_verify_verify_post import BodyVerifyVerifyVerifyPost
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.body_verify_verify_verify_post import BodyVerifyVerifyVerifyPost
+from flashcards_api_client import configuration
 
 
 class TestBodyVerifyVerifyVerifyPost(unittest.TestCase):

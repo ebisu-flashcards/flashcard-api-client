@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.validation_error import ValidationError
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.validation_error import ValidationError
+from flashcards_api_client import configuration
 
 
 class TestValidationError(unittest.TestCase):

@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.deck_patch import DeckPatch
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.deck_patch import DeckPatch
+from flashcards_api_client import configuration
 
 
 class TestDeckPatch(unittest.TestCase):

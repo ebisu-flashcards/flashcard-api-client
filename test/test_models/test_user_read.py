@@ -11,9 +11,9 @@
 
 import unittest
 
-import flashcards-api-client
-from flashcards-api-client.model.user_read import UserRead
-from flashcards-api-client import configuration
+import flashcards_api_client
+from flashcards_api_client.model.user_read import UserRead
+from flashcards_api_client import configuration
 
 
 class TestUserRead(unittest.TestCase):
